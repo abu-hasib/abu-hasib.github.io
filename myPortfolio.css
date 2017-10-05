@@ -3,25 +3,12 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: "Roboto", "Ubuntu", "sans-serif";
-<<<<<<< HEAD
 	font-size: 1.2em;
-=======
-	font-size: 1em;
->>>>>>> 6015492
 }
 
 h1 {
 	font-family: "Roboto", "Ubuntu";
 	font-style: italic;
-	font-weight: 300;
-}
-
-#header-content {
-	font-family: "Roboto", "Ubuntu", "sans-serif";
-	color:  #232323;
-	font-weight: 700;
-	font-size: 4em;
-	text-shadow: #FC0 1px 0 1px;
 }
 
 p, ul{
@@ -138,7 +125,7 @@ header #tag-line {
 
 section .container #my-name {
 	font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    	font-size: 2.5em;
+    	font-size: 3em;
     	font-style: italic;
     	font-weight: 700;
     	display: block;
@@ -146,12 +133,8 @@ section .container #my-name {
     }
 
 section .container #skills {
-<<<<<<< HEAD
 	font-size: 1.5em;
-=======
-	font-size: 1.2em;
->>>>>>> 6015492
-    	font-weight: 300; 
+	font-weight: 300; 
     	display: block;
 }
 
