@@ -2,17 +2,16 @@
 html, body {
 	width: 100%;
 	height: 100%;
-<<<<<<< HEAD
 	font-family: "Roboto", "Ubuntu", "sans-serif";
+<<<<<<< HEAD
 	font-size: 1.2em;
 =======
-	font-family: "Roboto" "Ubuntu", "sans-serif";
->>>>>>> parent of 6015492... Added blanks to the links and worked on the header
 	font-size: 1em;
+>>>>>>> 6015492
 }
 
 h1 {
-	font-family: "Comic-Sans";
+	font-family: "Roboto", "Ubuntu";
 	font-style: italic;
 	font-weight: 300;
 }
@@ -55,6 +54,7 @@ p, ul{
   margin-bottom: 0;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #eeeeee; }
+
   .floating-label-form-group input,
   .floating-label-form-group textarea {
     font-size: 1.5em;
@@ -67,6 +67,7 @@ p, ul{
     border-radius: 0;
     background: none;
     box-shadow: none !important; }
+
   .floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;
@@ -82,6 +83,7 @@ p, ul{
     vertical-align: middle;
     vertical-align: baseline;
     opacity: 0; }
+
   .floating-label-form-group:not(:first-child) {
     padding-left: 14px;
     border-left: 1px solid #eeeeee; }
@@ -112,9 +114,22 @@ header {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	color: #000;
+	color: #fff;
 }
 
+header #header{
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 42px;
+	color: #fff;
+	text-shadow: 4px 3px 0 #8a6d3b, 9px 8px 0 rgba(0,0,0,0.15);
+}
+
+header #tag-line {
+	font-family: "Roboto";
+	color: #fff;
+	text-shadow: 4px 3px 0 #8a6d3b, 9px 8px 0 rgba(0,0,0,0.15);
+}
 
 /*horizontal rule(custom)*/
   hr.small {
@@ -123,7 +138,7 @@ header {
 
 section .container #my-name {
 	font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    	font-size: 4em;
+    	font-size: 2.5em;
     	font-style: italic;
     	font-weight: 700;
     	display: block;
@@ -132,14 +147,10 @@ section .container #my-name {
 
 section .container #skills {
 <<<<<<< HEAD
-<<<<<<< HEAD
 	font-size: 1.5em;
 =======
 	font-size: 1.2em;
 >>>>>>> 6015492
-=======
-	font-size: 2em;
->>>>>>> parent of 6015492... Added blanks to the links and worked on the header
     	font-weight: 300; 
     	display: block;
 }
@@ -153,6 +164,10 @@ section .container #skills {
 
 #go {
 	margin-top: 50px;
+}
+
+#skills-showcase {
+	margin: 50px;
 }
 
 .btn-custom {
@@ -177,7 +192,7 @@ aside {
 
 /*portfolio*/
 #portfolio {
-	padding: 50px 0;
+	padding: 40px 0;
 }
 
 .portfolio-data {
