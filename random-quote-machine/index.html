@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Random Quote Generator</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
+           
+
+	
+</head>
+<body>
+        <header>
+        	
+        </header>
+
+        	<section class="ui grid centered">
+                <div class="ui  raised very padded  text container">
+                	<h1 class="ui header">Quote of the day</h1>
+		<p class="quoteText">Quote goes here</p>
+                	<p class="ui quoteAuthor text aligned right">Author</p>
+                	<button id="getQuote" class="ui secondary button">New Quote</button>
+                </div>
+        	</section>
+
+	
+        	<script>
+		$(document).ready(function() {
+
+			$("#getQuote").on("click", function(){
+				$.getJSON("https://cors-anywhere.herokuapp.com/http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en", function(json) {
+				var text = json.quoteText;
+				$(".quoteText").html(text.slice(0, text.length - 1));
+				$(".quoteAuthor").html(json.quoteAuthor);
+				var x = Math.round(0xffffff * Math.random()).toString(16);
+			        	var y = (6-x.length);
+			           var z = '000000';
+			           var z1 = z.substring(0,y);
+			           var color = '#' + z1 + x;
+			           console.log(color);  // just in case you like the color, here's the number
+			           $('body').css({
+			           	'background-color' : color, 
+			           	'width': '100%',
+					'height': '100%',
+					'position': 'absolute',
+					'top': 0,
+					'left': 0,
+					'background-size': 'cover',
+					'background-position': '50% 50%',
+					'background-repeat': 'no-repeat'
+				})
+				})
+				
+			})
+			
+		})
+	</script>		
+</body>
+</html>
