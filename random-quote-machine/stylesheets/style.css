@@ -17,8 +17,6 @@ body {
 	align-items: center;
 	-webkit-justify-content: center;
 	justify-content: center;
-	background: red;
-
 }
 
 header + .ui.grid{
@@ -36,6 +34,12 @@ header + .ui.grid{
 	position: absolute;
 	top: 85px;
 	right: 0px;
+}
+
+#tweet {
+	position: absolute;
+	top: 5px;
+	left: 5px;
 }
 
 #getQuote {
