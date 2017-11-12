@@ -65,7 +65,8 @@
 		           var z1 = z.substring(0,y);
 		           var color = '#' + z1 + x;
 		           console.log(color);  // just in case you like the color, here's the number
-		           $('body').css({
+		           if (json) {
+		           	$('body').css({
 		           	'background-color' : color, 
 		           	'width': '100%',
 				'height': '100%',
@@ -75,14 +76,15 @@
 				'background-size': 'cover',
 				'background-position': '50% 50%',
 				'background-repeat': 'no-repeat'
-			});
-			});
+				});	
+		           }
+		           });
 				
 		})
 		function updateTweet(json) {
 		  var thisQuote = json.quoteText;
 		  var author = json.quoteAuthor;
-		  $("#tweet").attr("href", "https://twitter.com/intent/tweet?text=" + thisQuote +  author + "%0a--- ");
+		  $("#tweet").attr("href", "https://twitter.com/intent/tweet?text=" + thisQuote + "%0a---  " +  author);
 		}
 		
 	</script>		
