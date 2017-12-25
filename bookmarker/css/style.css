@@ -4,7 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   font-size: 16px;
+  background: -webkit-gradient(linear,left top, right bottom,from(rgb(69, 140, 69, 1)), to(rgb(101, 101, 199)));
   background: linear-gradient(to bottom right,rgb(69, 140, 69, 1), rgb(101, 101, 199));
+  
 }
 label {
   display: block;
