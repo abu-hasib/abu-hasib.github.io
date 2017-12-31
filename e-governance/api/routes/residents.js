@@ -1,43 +1,39 @@
 // @import modules
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
+router.get("/", (req, res, next) => {
+  res.render("index");
+});
+
+router.get("/health", (req, res, next) => {
   res.status(200).json({
-    message: 'wait while we get information on all residents'
-  })
-})
+    message: "wait while we get information on all residents health"
+  });
+});
 
-router.get('/health', (req, res, next) => {
+router.get("/transportation", (req, res, next) => {
   res.status(200).json({
-    message: 'wait while we get information on all residents health'
-  })
-})
+    message: "wait while we get information on all residents transportation"
+  });
+});
 
-router.get('/transportation', (req, res, next) => {
+router.get("/housing-development", (req, res, next) => {
   res.status(200).json({
-    message: 'wait while we get information on all residents transportation'
-  })
-})
+    message: "wait while we get information on all residents h&d"
+  });
+});
 
-router.get('/housing-development', (req, res, next) => {
+router.get("/public-safety", (req, res, next) => {
   res.status(200).json({
-    message: 'wait while we get information on all residents h&d'
-  })
-})
+    message: "wait while we get information on all residents public safety"
+  });
+});
 
-router.get('/public-safety', (req, res, next) => {
+router.get("/environment", (req, res, next) => {
   res.status(200).json({
-    message: 'wait while we get information on all residents public safety'
-  })
-})
-
-
-router.get('/environment', (req, res, next) => {
-  res.status(200).json({
-    message: 'wait while we get information on all residents environ'
-  })
-})
-
+    message: "wait while we get information on all residents environ"
+  });
+});
 
 module.exports = router;

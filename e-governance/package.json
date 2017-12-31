@@ -4,13 +4,16 @@
   "description": "A web app showcasing the activities of the government",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "Ridwan Abiola",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "morgan": "^1.9.0"
+    "express-handlebars": "^3.0.0",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^1.14.6"
