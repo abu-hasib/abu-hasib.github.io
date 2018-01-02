@@ -9,6 +9,7 @@ const residentRoutes = require("./api/routes/residents");
 const businessRoutes = require("./api/routes/business");
 const exploreRoutes = require("./api/routes/explore");
 const govRoutes = require("./api/routes/government");
+const routes = require("./api/routes/index");
 
 const app = express();
 
@@ -20,6 +21,8 @@ app.set("view engine", "hbs");
 app.use(logger("dev"));
 
 // Middleware to make setting up routes easier
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/", routes);
 app.use("/residents", residentRoutes);
 app.use("/government", govRoutes);
 app.use("/business", businessRoutes);
