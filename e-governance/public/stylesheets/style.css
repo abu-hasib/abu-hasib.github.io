@@ -211,23 +211,31 @@ figure:nth-child(8) {
 }
 
 /* Activities */
-#activity {
-  margin: auto 20px;
+article#boxes {
+  padding: 30px;
+  overflow: hidden;
 }
 
-#activity h2 {
-  font-size: 10px;
-}
-
-#activity .activities {
+#boxes .box {
+  text-align: center;
   float: left;
   width: 30%;
-  text-align: center;
+  padding: 10px;
+}
+
+#boxes .box:hover {
+  border-bottom: #e8491d 5px solid;
+  color: #e8491d;
+}
+
+article#boxes .box:hover > h4 {
+  color: #e8491d;
 }
 
 /* Footer */
 footer {
-  background: #e8491d;
+  background: #0e1a2b;
+  margin-top: 20px;
   text-align: center;
   padding: 10px;
   color: #fff;
