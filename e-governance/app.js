@@ -1,8 +1,10 @@
 // @import modules
 const expressHbs = require("express-handlebars");
-const logger = require("morgan");
+const bodyParser = require("body-parser");
 const express = require("express");
+const logger = require("morgan");
 const path = require("path");
+const mail = require("nodemailer");
 
 const emergencyRoutes = require("./api/routes/emergency");
 const residentRoutes = require("./api/routes/residents");
@@ -22,6 +24,8 @@ app.use(logger("dev"));
 
 // Middleware to make setting up routes easier
 app.use(express.static(path.join(__dirname, "public")));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use("/", routes);
 app.use("/residents", residentRoutes);
 app.use("/government", govRoutes);

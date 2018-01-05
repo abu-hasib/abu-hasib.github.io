@@ -2,6 +2,10 @@
 const express = require("express");
 const router = express.Router();
 
+router.get("/", (req, res, next) => {
+  res.render("residents");
+});
+
 router.get("/health", (req, res, next) => {
   res.status(200).json({
     message: "wait while we get information on all residents health"
