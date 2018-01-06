@@ -22,6 +22,12 @@ h1 {
   border-bottom: #e8491d solid 5px;
 }
 
+/* h2 {
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: #e8491d solid 5px;
+} */
+
 /* header */
 header {
   background-color: #0e1a2b;
@@ -41,12 +47,16 @@ header #branding {
 }
 
 header #branding h1 {
-  margin: 0;
+  margin-top: 0.7em;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 header nav {
   float: right;
-  margin-top: 40px;
+  margin-top: 55px;
   margin-bottom: 5px;
 }
 
@@ -81,11 +91,12 @@ ul li a {
 }
 
 ul li ul {
-  margin-top: 0;
+  margin-top: 10px;
+  border-radius: 1em;
 }
 
 ul li ul li {
-  padding: 0 50px 0 10px;
+  padding: 0 100px 0 10px;
   white-space: nowrap;
   display: none;
   text-align: left;
@@ -375,4 +386,11 @@ footer {
   margin-top: auto;
   padding: 10px;
   color: #fff;
+}
+
+footer li a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
