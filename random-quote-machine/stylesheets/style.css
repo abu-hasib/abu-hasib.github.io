@@ -1,0 +1,90 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 10;
+	}
+
+/*Flexbox at work positions all element in the center no matter the zoom*/
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 10;
+	font-family: 'Roboto';
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+header + .ui.grid{
+	padding-top: 10rem;
+}
+
+.centered {
+	z-index: 1;
+	position: relative;
+	justify-content: center;
+	min-height:  40vh;
+}
+
+.quote.right.icon {
+	position: absolute;
+	top: 85px;
+	right: 0px;
+}
+
+#tweet {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+#getQuote {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+
+.pressed {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+#wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*.button  {
+	border: .2rem solid black;
+	border-radius: .5rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+	padding: 1rem .5rem;
+	transition: all .07s ease;
+	width: 10rem;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.4);
+	text-shadow: 0 0 .5rem black;
+}*/
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
